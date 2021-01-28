@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1> Create object</h1>
+<p id="rohit"></p>
+<p id ="a"> </p>
+<script>
+var person = {
+    firstName:"jon",
+    lastName:"doe",
+    age:30,
+    eyeColor:"blue", 
+    fullname:function() {
+        return this.firstName +" "+ this.lastName ;  
+    }
+
+
+};
+document.getElementById("rohit").innerHTML=person.firstName + " is " + person.age+ " " + " years old.";
+document.getElementById("a").innerHTML=person.fullname();
+document.getElementById("a").innerHTML=person["firstName"];
+</script>
+</body>
+</html>
+
+
+
